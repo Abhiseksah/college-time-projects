@@ -35,7 +35,7 @@ def change_player():
 	global player
 	global z
 	
-	print(z)
+	#print(z)
 	if z%2==0:
 		player='X'
 	else:
