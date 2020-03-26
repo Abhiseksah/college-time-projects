@@ -1,7 +1,7 @@
 global player
 temp=0
 
-print("Tic Tac Toe by Abhisek")
+print("Tic Tac Toe by Abhisek\n")
 #board------------------------------
 board=["-","-","-",
 	   "-","-","-",
@@ -47,7 +47,7 @@ global taking_input
 def taking_input():
 	global player
 	global a
-	a=input("enter the no between 1-9\n")
+	a=input("Enter the no between 1-9\n")
 	check_range()
 	
 	if board[a-1]=='-':
@@ -55,7 +55,7 @@ def taking_input():
 		board[a-1]=player
 		#change_player()
 	else:
-		print("Number is already taken try something else")
+		print("Number is already taken try something else\n")
 		taking_input()
 	
 
@@ -63,8 +63,8 @@ def taking_input():
 def check_range():
 		global a
 		if a not in range(1,10):
-			print("Not in range try again")
-			a=input("enter the no between 1-9\n")
+			print("Not in range try again\n")
+			a=input("Enter the no between 1-9\n")
 			check_range()
 #changed display--------------
 
@@ -127,18 +127,37 @@ def check_tie():
 def print_winner():
 	global temp
 	if temp==10:
-		print("The game is tie")
+		print("The game is tie\n\n")
+		play_again()
 	else:
 		if z%2==0:
-			print("O won")
+			print("O won\n\n")
+			play_again()
 		else:
-			print("X won")
+			print("X won\n\n")
+			play_again()
 
+def play_again():
+
+	q=input("Want to play again  1/0 ?\n")
+	#print(q)
+	if q==1:
+		global temp
+		global still_running
+		global z
+		temp=0
+		z=0
+		still_running=True
+		for i in range(0,9):
+			board[i]="-"
+		display()
+		play()
+	else:
+		print("Thank You\n\n")
 
 
 
 play()
-
 
 
 
