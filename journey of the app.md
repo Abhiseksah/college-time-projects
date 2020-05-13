@@ -1,4 +1,3 @@
-#tic-tak-toe
 1.first of all i have created this with various functions in python.the functions are
 
   Board()-which is nothing but the game board and a python list...
