@@ -9,4 +9,4 @@
 ![](sample.png)
 
 For more info
-![Click Here](journey of the app.md)
+![](journey of the app.md)
