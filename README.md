@@ -8,5 +8,4 @@
 ## just download and open game file in any ide.
 ![](sample.png)
 
-For more info
-![](journey of the app.md)
+For more info [Click Here](journey of the app.md)
