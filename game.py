@@ -47,7 +47,7 @@ global taking_input
 def taking_input():
 	global player
 	global a
-	a=input("Enter the no between 1-9\n")
+	a=int(input("Enter the no between 1-9\n"))
 	check_range()
 	
 	if board[a-1]=='-':
@@ -64,7 +64,7 @@ def check_range():
 		global a
 		if a not in range(1,10):
 			print("Not in range try again\n")
-			a=input("Enter the no between 1-9\n")
+			a=int(input("Enter the no between 1-9\n"))
 			check_range()
 #changed display--------------
 
@@ -139,7 +139,7 @@ def print_winner():
 
 def play_again():
 
-	q=input("Want to play again  1/0 ?\n")
+	q=int(input("Want to play again  1/0 ?\n"))
 	#print(q)
 	if q==1:
 		global temp
